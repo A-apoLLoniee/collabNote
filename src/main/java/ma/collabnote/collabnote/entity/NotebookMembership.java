@@ -18,12 +18,12 @@ public class NotebookMembership {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @MapsId(value = "idUser")
-    @JoinColumn(name = "idUser")
+    @JoinColumn(name = "id_user")
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @MapsId(value = "idNB")
-    @JoinColumn(name = "idNB")
+    @JoinColumn(name = "id_notebook")
     private Notebook notebook;
 
     @Enumerated(value = EnumType.STRING)
