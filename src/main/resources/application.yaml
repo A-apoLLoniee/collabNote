@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: CollabNote
+
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:55432/collabnote_db
+    username: admin
+    password: collabnote
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  flyway:
+    enabled: true
+
+  docker:
+    compose:
+      enabled: false
